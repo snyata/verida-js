@@ -1,9 +1,9 @@
 {
   "name": "root",
   "private": true,
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
-    "lerna": "^3.22.1",
+    "lerna": "^8.1.2",
     "typedoc": "^0.22.12",
     "typedoc-plugin-markdown": "^3.11.14",
     "typedoc-plugin-missing-exports": "^0.22.6"
@@ -14,6 +14,16 @@
     "doc": "typedoc --entryPointStrategy packages . --plugin typedoc-plugin-missing-exports --plugin typedoc-plugin-markdown --out api-docs src/index.ts"
   },
   "workspaces": [
-    "packages/*"
-  ]
+    "packages/*",
+    "synid-js"
+  ],
+  "version": "1.0.0",
+  "description": "Synavate implementation & extension of Verida-js",
+  "main": "index.js",
+  "repository": "https://github.com/snyata/verida-js.git",
+  "author": "snyata <core@synavate.tech>",
+  "dependencies": {
+    "@types/node": "^20.12.5",
+    "@types/pouchdb-core": "^7.0.14"
+  }
 }
